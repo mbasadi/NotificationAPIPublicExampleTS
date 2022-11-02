@@ -1,11 +1,12 @@
+/* eslint-disable comma-dangle */
 const { typescript } = require('projen');
 const project = new typescript.TypeScriptAppProject({
   defaultReleaseBranch: 'main',
   name: 'NotificationAPIPublicExampleTS',
 
-  // deps: [],                /* Runtime dependencies of this module. */
+  deps: ['notificationapi-node-server-sdk']
+  // devDeps: ['prettier'],
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
   // packageName: undefined,  /* The "name" in package.json. */
 });
 project.synth();
