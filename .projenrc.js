@@ -1,5 +1,5 @@
 const { typescript } = require('projen');
-const project = new typescript.TypeScriptProject({
+const project = new typescript.TypeScriptAppProject({
   defaultReleaseBranch: 'main',
   name: 'NotificationAPIPublicExampleTS',
 
